@@ -1,0 +1,239 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+    width: 100%;
+}
+
+.header {
+    background: linear-gradient(90deg, #fc5534, #f87a61);
+    border-bottom: 5px solid #333F48;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.header img {
+    height: 50px;
+}
+
+.form {
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.form-container form {
+    border-radius: 5px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, auto);
+    justify-items: center;
+    grid-gap: 12px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.form-header {
+    background-color: #333F48;
+    color: white;
+    width: 90%;
+    height: 18px;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+
+.form-container input {
+    width: 500px;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.form-container_data input {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.form-container_data {
+    position: relative;
+}
+
+.form-container_data b {
+    color: #fc5534;
+    font-size: 17px;
+}
+
+.form-container_data .underline {
+    background-color: #333F48;
+    bottom: -2px;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+}
+
+.form-container_data .underline:before {
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    background: #fc5534;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.form-container_data input:focus ~ .underline:before,
+.form-container_data input:valid + .underline:after {
+    transform: scaleX(1);
+}
+
+.form-container_data p {
+    color: red;
+    display: flex;
+    gap: 6px;
+    font-size: 13px;
+}
+
+.form_button {
+    height: 40px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    border: 2px solid #fc5534;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 200ms ease;
+}
+
+.form_button:hover {
+    background-color: #fc5534;
+    color: white;
+    text-shadow: 0px 2px 3px #333F48;
+    box-shadow: 0px 5px 5px 1px rgba(190, 92, 47, 0.5);
+    transform: scale(1.01);
+    transition: transform 200ms ease;
+}
+
+.container-button-exls {
+    background-color: #f0f0f0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 3px solid white;
+}
+
+.button-exls {
+    height: 40px;
+    width: 115px;
+    border-radius: 5px;
+    background-color: white;
+    display: inline-block;
+    border: 2px solid #107c41;
+    cursor: pointer;
+    font-size: 12px;
+    position: relative;
+    left: 0.5%;
+    transition: transform 200ms ease;
+}
+
+.button-exls:hover {
+    background-color: #107c41;
+    color: white;
+    text-shadow: 0px 2px 3px #333F48;
+    box-shadow: 0px 5px 5px 1px rgba(45, 122, 45, 0.5);
+    transform: scale(1.01);
+    transition: transform 200ms ease;
+}
+
+.table {
+    border-collapse: collapse;
+    background-color: white;
+    width: 1595px;
+  }
+  
+.table td, .table th {
+    border: 2px solid #ddd;
+    padding: 6px;
+    text-align: center;
+    font-size: 11px;
+  }
+
+  .table .rt-thead {
+    position: fixed;
+  }
+  
+.table tr:nth-child(even){background-color: #f2f2f2;}
+  
+.table tr:hover {background-color: #ddd}
+
+.table th {
+    font-size: 12px;
+    text-align: center;
+    background-color: #333F48;
+    color: white;
+  }
+
+  .table span {
+    margin-left: 6px;
+  }
+
+.table_pagination {
+    font-size: 14px;
+    text-align: center;
+}
+
+.table_pagination button {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.table_pagination span input {
+    height: 18px;
+    margin-right: 5px;
+}
+
+.table_pagination select {
+    border-radius: 5px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.header_loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container_loader {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.form-container_loader h3 {
+    margin: 0;
+    color: #333F48;
+}
+
+
