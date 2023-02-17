@@ -14,7 +14,7 @@ function App() {
 
   // Llamado a la API tipo POST ***************
     const newQuery = data => {
-    const URL = 'http://vwnv02ax03625:8080/sp-record-voucher/record-voucher/'
+    const URL = 'https://vwnv02ax03625:8080/sp-record-voucher/record-voucher/'
     axios.post(URL, data)
       .then((res) => {setQuery(res.data)
       setIsLoading(false)})
