@@ -17,7 +17,7 @@ function App() {
     const URL = 'http://vwnv02ax03625:8080/sp-record-voucher/record-voucher/'
     axios.post(URL, data)
       .then((res) => {setQuery(res.data)
-      setIsLoading(false)})
+        setIsLoading(false)})
       .catch((err) => console.log(err))
   }
 

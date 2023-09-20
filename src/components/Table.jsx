@@ -157,7 +157,6 @@ const Table = ({query, isLoading}) => {
 
       const { pageIndex, pageSize } = state
 
-
         if(isLoading){
             return <div>
                 <div className='container-button-exls'>
